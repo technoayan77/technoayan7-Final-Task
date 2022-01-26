@@ -1,4 +1,4 @@
-const url1 = 'http://hp-api.herokuapp.com/api/characters/house/gryffindor';
+const url1 = 'https://hp-api.herokuapp.com/api/characters/house/gryffindor';
 fetch(url1,{
     method: 'GET'
 }).then((response)=> {

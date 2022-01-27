@@ -100,12 +100,9 @@ a:focus {
 
 section#Home {
   background-image: url(img/back.jpg);
-  background-repeat:no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ---------------------------------------Houses Section --------------------------------------*/

@@ -13,12 +13,12 @@
 }
 
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  background-attachment: fixed;
   color: var(--on-background);
   font-family: Comfortaa, sans-serif;
   background-color: var(--background);
@@ -32,25 +32,31 @@ section {
   align-items: center;
   flex-direction: column;
 }
-#Home {
-  margin: auto auto auto auto;
+#Home img {
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: auto;
+  background-size: 300%;
+
 }
 
 h1 {
   font-family: Kaushan Script, sans-serif;
-  font-size: 7em;
+  font-size:9vw;
   text-align: center;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: normal;
   text-align: center;
 }
 
 h2 {
   color: var(--on-background-alt);
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: normal;
   text-align: center;
 }
@@ -60,7 +66,7 @@ p {
   font-family: 'Lobster', cursive;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Oleo Script', cursive;
-  font-size: 1.2em;
+  font-size: 1.5vw;
 }
 
 /* Navigation */
@@ -68,8 +74,8 @@ nav {
   z-index: auto;
   position: fixed;
   font-family: Oswald, sans-serif;
-  font-size: 1.5em;
-  letter-spacing: 0.06em;
+  font-size: 1.5vw;
+  letter-spacing: 0.06vw;
   padding: 1.5%;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -92,18 +98,12 @@ a:focus {
 /* Home Section */
 .title-group {
   text-align: center;
-  color: ghostwhite
+  color: floralwhite;
 }
 #head {
-  font-size: 9em;
+  font-size: 9vw;
 }
 
-section#Home {
-  background-image: url(img/back.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* ---------------------------------------Houses Section --------------------------------------*/
 #Houses {
@@ -113,20 +113,19 @@ section#Home {
 
 .house-container {
   display: flex;
-  margin: 0 20% 0 0;
+  margin: 0 8% 0 8%;
 }
 
 .image-container {
-  border: 1px solid var(--secondary-color);
-  border-radius: 4%;
-  padding: 1% 4%;
-  margin-right: 3%;
+  border: 0.19vh solid var(--secondary-color);
+  border-radius: 1.9vh;
+  padding: 1.9vh 3.9vh;
+  margin-right: 4.9vh;
   width: 100%;
-  text-align: center;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  text-align: center;
   transition: transform 400ms ease-out;
-  display: table;
 }
 
 .image-container:hover {
@@ -134,7 +133,7 @@ section#Home {
 }
 
 img {
-  width: 12em;
+  width: 12vw;
 }
 
 /* ---------------------------------------------------characters------------------------------ */
@@ -177,54 +176,52 @@ img {
   color: var(--on-background);
 }
 
-.outline:hover {
-  background: var(--primary-color);
-  color: var(--on-primary);
-}
 
 /* ---------------------------------------------Responsivenes-------------------- */
 
 
 @media screen and (max-width: 1000px) {
   body {
-    text-align: center;
-    width: auto;
+  background-attachment: fixed;
   }
   .house-container {
     display: block;
-    margin: 0 20% 0 20%;
+    margin: 0 18% 0 10%;
     text-align: center;
   }
   .image-container {
     margin-bottom: 10%;
     text-align: center;
+    width: 100%;
   }
   .image-container2 {
     margin-bottom: 10%;
     text-align: center;
-  }
-  h1 {
-    font-size: 300%;
-    text-align: center;
-  }
-  h2 {
-    font-size: 150%;
-    text-align: center;
+    width: 100%;
   }
   .characters-container {
     display: block;
-    margin: 0 20% 0 20%;
+    margin: 0 18% 0 10%;
     text-align: center;
+    width: 50%;
   }
-  .characters-container2 {
+  #char2 {
     display: block;
-    margin: 0 20% 0 20%;
-    text-align: center;
+    margin: 0 18% 0 10%;
   }
-  section#Home {
-    background-image: url(img/back.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .details-container {
+    display: block;
+    margin: 2% 18% 0 10%;
+    width: 50%;
   }
+  .image-container:hover {
+    transform: scale(1.15);
+  }
+  .image-container img {
+    width: 70%;
+  }
+  .image-container2 img {
+    width: 70%;
+  }
+  
 }
